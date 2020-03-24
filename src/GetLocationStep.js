@@ -26,7 +26,6 @@ const GetLocation = ({ next }) => {
       await navigator.geolocation.getCurrentPosition(
         position => {
           setIsFinding(false)
-          console.log(this.state.latitude)
 
           dispatch(
             setLocation({
